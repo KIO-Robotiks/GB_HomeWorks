@@ -156,10 +156,9 @@ int[] ProductSimmetria(int[] array)
 
     for (int i = 0; i < output_array_size; i++)
     {   
-        if (array.Length%2 != 0 && i == output_array_size - 1) output_array[i] = array[i];
+        if(i == (array.Length-1)-i) output_array[i] = array[i];
         else output_array[i] = array[i]*array[(array.Length-1)-i];
     }
-
     return output_array;
 }
 
