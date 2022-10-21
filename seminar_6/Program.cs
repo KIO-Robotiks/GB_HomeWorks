@@ -18,31 +18,31 @@ void ShowDoubleArray(double[] array)
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-void SumOfPozitive(int M)
-{   
-    string number = "";
-    int sum = 0;
-    for (int i = 0; i < M; i++)
-    {
-        number = Console.ReadLine();
-        try
-        {
-            if (Convert.ToInt32(number) > 0) sum++;
-        }
-        catch
-        {
-            Console.WriteLine("Это не число");
-            i--;
-        }
-    }
-    Console.WriteLine($"Кол-во положительных чисел из {M} = {sum}");
-}
+// void SumOfPozitive(int M)
+// {   
+//     string number = "";
+//     int sum = 0;
+//     for (int i = 0; i < M; i++)
+//     {
+//         number = Console.ReadLine();
+//         try
+//         {
+//             if (Convert.ToInt32(number) > 0) sum++;
+//         }
+//         catch
+//         {
+//             Console.WriteLine("Это не число");
+//             i--;
+//         }
+//     }
+//     Console.WriteLine($"Кол-во положительных чисел из {M} = {sum}");
+// }
 
-Console.WriteLine("Задача 41. Считает кол-во введённых чисел больше 0.");
-Console.WriteLine("Сколько чисел вы хотите ввести?");
-int M = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Вводите числа и нажимайте Enter.");
-SumOfPozitive(M);
+// Console.WriteLine("Задача 41. Считает кол-во введённых чисел больше 0.");
+// Console.WriteLine("Сколько чисел вы хотите ввести?");
+// int M = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Вводите числа и нажимайте Enter.");
+// SumOfPozitive(M);
 
 
 
